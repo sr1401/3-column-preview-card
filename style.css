@@ -78,6 +78,8 @@ p {
     height: 44px;
     border: 2px solid var(--Very--light--gray);
     margin-top: 80px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.9375em;;
 }
 
 .card__more:hover {
@@ -85,25 +87,19 @@ p {
     cursor: pointer;
 }
 
-.card__more a{
-    text-decoration: none;
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-}
-
-.card__more:hover a {
+.card__more:hover {
     color: var(--Very--light--gray);
 }
 
-.card__sedans a {
+.card__sedans button{
     color: var(--Bright--orange);
 }
 
-.card__suvs a {
+.card__suvs button {
     color: var(--Dark--cyan);
 }
 
-.card__luxury a {
+.card__luxury button {
     color: var(--Very--dark--cyan);
 }
 
