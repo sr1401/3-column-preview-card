@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--Very--light--gray);
+}
+
+body {
+    margin: 0;    
+}
+
+:root {
+    --Bright--orange: hsl(31, 77%, 52%);
+    --Dark--cyan: hsl(184, 100%, 22%);
+    --Very--dark--cyan: hsl(179, 100%, 13%);
+    --Transparent--white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+    --Very--light--gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9375em;
+}
+
+.card {
+    height: 500px;
+    display: flex;
+}
+
+.c-3 {
+    width: 307px;
+    padding: 48px;
+}
+
+.card__sedans {
+    background-color: var(--Bright--orange);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.card__suvs {
+    background-color: var(--Dark--cyan);
+}
+
+.card__luxury {
+    background-color: var(--Very--dark--cyan);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.card__name {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5em;
+    color: var(--Very--light--gray);
+    margin-top: 35px;
+}
+
+.card__desc {
+    line-height: 25px;
+    color: var(--Transparent--white);
+    margin-top: 30px;
+}
+
+.card__more {
+    background-color: var(--Very--light--gray);
+    border-radius: 22px;
+    width: 146px;
+    height: 44px;
+    border: 2px solid var(--Very--light--gray);
+    margin-top: 80px;
+}
+
+.card__more:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.card__more a{
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.card__more:hover a {
+    color: var(--Very--light--gray);
+}
+
+.card__sedans a {
+    color: var(--Bright--orange);
+}
+
+.card__suvs a {
+    color: var(--Dark--cyan);
+}
+
+.card__luxury a {
+    color: var(--Very--dark--cyan);
+}
+
+/* reponsive */
+@media (max-width: 740px) {
+    .card {
+        display: block;
+    }
+
+    .c-3 {
+        width: 327px;
+        height: 442px;
+    }
+
+    .card__sedans {
+        border-radius: 7px 7px 0 0;
+    }
+
+    .card__luxury {
+        border-radius: 0 0 7px 7px;
+    }
+
+    .card__more {
+        margin-top: 20px;
+    }
+}
